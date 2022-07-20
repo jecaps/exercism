@@ -33,7 +33,7 @@ Task 3 Find two cards from the exact middle of the deck
 Elyse will take a deck of ten cards, and make every card disappear except the middle two cards.
 */
 function middleTwo(deck) {
-  let midOfDeck = deck.length / 2 - 1let;
+  let midOfDeck = deck.length / 2 - 1;
   return deck.splice(midOfDeck, 2);
   // return deck.slice(midOfDeck - 1, midOfDeck + 1)
 }
@@ -55,7 +55,7 @@ function sandwichTrick(deck) {
 Task 5 Every card that isn't 2 disappears
 
 Elyse's favorite number today is 2. In this trick, every card that isn't a 2 will disappear from the deck.
-*/ 
+*/
 function twoIsSpecial(deck) {
   return deck.filter((value) => value === 2);
 }
@@ -64,7 +64,7 @@ function twoIsSpecial(deck) {
 Task 6 Convert a shuffled deck into a perfectly ordered deck
 
 Elyse wishes to demonstrate her mastery of reordering the cards perfectly - no matter how well shuffled.
-*/ 
+*/
 function perfectlyOrdered(deck) {
   return deck.sort((a, b) => a - b);
 }
@@ -74,7 +74,7 @@ Task 7 Reorder the deck
 
 Elyse wants to change the order of the cards in the deck. After the trick, the card that is currently at the top should end up at the bottom of the deck. 
 The second card should end up second last etc.
-*/ 
+*/
 function reorder(deck) {
   return deck.reverse();
 }
